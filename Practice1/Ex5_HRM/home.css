@@ -1,0 +1,110 @@
+header{
+    align-items: center;
+    color: white;
+    background-color: #1B1E21;
+    display: flex;
+    padding-right: 20px;
+}
+
+.h-logo{
+}
+
+.h-navbar{
+    font-weight: bold;
+    width: 35%;
+}
+
+.h-navbar{
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.h-navbar a{
+    text-decoration: none;
+    font-weith: bold;
+    font-size: 18px;
+}
+#hNavHome{
+    color: white;
+}
+#hNavContact{
+    color: grey;
+}
+
+#h-search{
+    flex: 1; /* Chiếm 1 phần không gian bên phải */
+    display: flex;
+    justify-content: flex-end;
+}
+
+#h-search1{
+    border-radius: 10px;
+    height: 35px;
+    margin-right: 20px;
+}
+
+.bt-search{
+    background-color: #1B1E21;
+    color: white;
+    border-radius: 10px;
+    border-color: white;
+}
+
+.m-employee{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 25%;
+}
+
+.m-button-box{
+    border: none;
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.m-button-add{
+    border: none;
+    background-color: #0D6EFD;
+    color: white;
+    border-radius: 10%;
+    height: 30px;
+}
+.m-table-box{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 25%;
+}
+.m-table{
+    background-color: white;
+    width: 100%;
+    heigth: 200px;
+}
+.m-table tr{
+    height: 30px;
+}
+.container{
+    background-color: #F8F9FA;
+}
+
+.t-edit{
+    border-radius: 10%;
+    border: none;
+    color: white;
+    background-color: #FFC107;
+    margin-right: 10px;
+}
+.t-edit:hover{
+    background-color: #422B2F;
+}
+.t-delete{
+    border-radius: 10%;
+    border: none;
+    color: white;
+    background-color: #DC3545;
+}
+.t-delete:hover{
+    background-color: #422B2F;
+}
