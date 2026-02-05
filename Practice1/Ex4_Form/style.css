@@ -1,0 +1,21 @@
+#basic-inf{
+    display: flex;
+}
+
+table{
+    width: 400px;
+    table-layout: fixed;
+}
+
+td, th{
+    padding: 10px;
+}
+
+.bt{
+    width: 200px;
+}
+
+.tag-name{
+    font-weight: bold;
+    width: 200px;
+}

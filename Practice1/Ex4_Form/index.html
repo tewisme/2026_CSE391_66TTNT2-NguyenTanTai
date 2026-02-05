@@ -5,20 +5,213 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <form>
-        <div class="tag-header">Basic Info</div>
-        <div id="basic-inf">
-            <div>
-                <p class="tag-name">Employlee ID</p>
-            </div>
-            <div>
-                <p>9</p>
-            </div>
+        <div class="tag-header">
+            <h2>Basic Info</h2>
         </div>
+        <hr/>
+        <table>
+            <tr>
+                <th>
+                    Employee ID
+                </th>
+                <td>
+                    9
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    Last Name
+                </th>
+                <td>
+                    Dodsworth
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    First Name
+                </th>
+                <td>
+                    <input type="text" value="Anne">
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    Gender
+                </th>
+                <td>
+                    <input type="radio"> Male <br>
+                    <input type="radio"> Female <br>
+                    <input type="radio"> XXX <br>
+                    <input type="radio" checked> ZZZ <br>
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    Title
+                </th>
+                <td>
+                    <input type="text" value="Sales Representative">
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    Suffix
+                </th>
+                <td>
+                    <input type="text" value="Ms.">
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    BirthDate
+                </th>
+                <td>
+                    <input type="date">(?)
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    HireDate
+                </th>
+                <td>
+                    <input type="date">
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    SSN # (if applicable)
+                </th>
+                <td>
+                    <input type="text">
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    Reports To
+                </th>
+                <td>
+                    <select>
+                        <option>Buchanan</option>
+                        <option>Tafi</option>
+                        <option>Lamda</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
     </form>
+    <form>
+        <div class="tag-header">
+            <h2>Contacnt Info</h2>
+        </div>
+        <hr/>
+        <table>
+            <tr>
+                <th>Email</th>
+                <td>
+                    <input type="mail" placeholder="name@example.comm">
+                </td>
+            </tr>
+            <tr>
+                <th>Address</th>
+                <td>
+                    <input type="text" value="7 Houndstooth Rd.">
+                </td>
+            </tr>
+            <tr>
+                <th>City</th>
+                <td>
+                    <input type="text" value="London">
+                </td>
+            </tr>
+            <tr>
+                <th>Region</th>
+                <td>
+                    <input type="text" >
+                </td>
+            </tr>
+            <tr>
+                <th>Postal Code</th>
+                <td>
+                    <input type="text" value="WG2 7LT">
+                </td>
+            </tr>
+            <tr>
+                <th>Country</th>
+                <td>
+                    <select>
+                        <option>Russion Federation</option>
+                        <option>VietNam</option>
+                        <option>Federation</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <th>US Home Phone</th>
+                <td>
+                    <input type="tel" value="(234)234-2342">
+                </td>
+            </tr>
+            <tr>
+                <th>Photo</th>
+                <td>
+                    <input type="file" value="none.png">
+                </td>
+            </tr>
+        </table>
+    </form>
+    <form>
+        <div class="tag-header">
+            <h2>Contacnt Info</h2>
+        </div>
+        <hr/>
+        <table>
+            <tr>
+                <th>
+                    Notes
+                </th>
+                <td>
+                    <textarea rows="6" cols="50">Anne has a BA degree in English from St. Lawrence College. She is fluent in French and German.ZZZ</textarea>
+                </td>
+            <tr>
+            <tr>
+                <th>
+                    Preferred Shift
+                </th>
+                <td>
+                    <input type="checkbox" name="pshift" id="pshift"> Regular <br>
+                    <input type="checkbox" name="pshift2" id="pshift2" checked> Gravy Yard
+                </td>
+            <tr>
+            <tr>
+                <th>
+                    Active
+                </th>
+                <td>
+                    <input type="checkbox" checked>
+                </td>
+            <tr>
+            <tr>
+                <th>
+                    Are you human?
+                </th>
+                <td>
+                    <img src="captcha.png" alt="capcha"><br>
+                    <button>Click to change</button>
+                    <input type="text"></input>
+                </td>
+            <tr>
+        </table>
+    </form>
+    <hr/>
+    <button>&lt;</button>
+    <button>&gt;</button>
+    <button>Submit</button>
+    <button>Cancel</button>
 </body>
 
 <html>
