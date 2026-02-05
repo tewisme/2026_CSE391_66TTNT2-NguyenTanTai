@@ -1,0 +1,57 @@
+
+body{
+    background-color: #d8d8d8;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container{
+    background-color: white;
+    width: 40%;
+    height: 35%;
+}
+input[type="text"]{
+    width: 200px;
+    padding: 8px 15px;
+}
+.name-email{
+    display: flex;
+}
+.mail-box{
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.phone-position{
+    display: flex;
+}
+
+.position-box{
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#iposition{
+    width: 235px;
+    height: 35px;
+}
+.save-cancel{
+    flex: 1;
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+    margin-right: 50px;
+}
+.save{
+    color: white;
+    background-color: #158953;
+}
+.cancel{
+    color: white;
+    background-color: #6C757E;
+}
