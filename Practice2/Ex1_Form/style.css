@@ -9,8 +9,8 @@
 
 .container {
     display: flex;
-    width: 60%;
-    height: 500px;
+    width: 80%;
+    height: 400px;
     flex-flow: row wrap;
     padding-left: 3%;
     justify-content: space-between;
@@ -33,4 +33,17 @@
 #mess-textare {
     padding-top: 10px;
     height: 200px;
+}
+
+.send-button {
+    padding: 5px;
+    background-color: #7ECEFD;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    color: white;
+}
+
+.notice {
+    opacity: 0.6;
 }
