@@ -1,0 +1,34 @@
+.title {
+    font-size: 200%;
+    color: gray;
+}
+
+.title {
+    padding: 3%;
+}
+
+.container {
+    display: flex;
+    width: 60%;
+    height: 500px;
+    flex-flow: row wrap;
+    padding-left: 3%;
+    justify-content: space-between;
+}
+
+.input-na {
+    width: 40%;
+    height: 50px;
+    border: 1px solid #ccc;
+}
+
+.input-sm {
+    width: 100%;
+    height: 50px;
+    border: 1px solid #ccc;
+}
+
+#mess-textare {
+    padding-top: 10px;
+    height: 200px;
+}
