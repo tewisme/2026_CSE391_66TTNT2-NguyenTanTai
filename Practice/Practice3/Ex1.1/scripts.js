@@ -77,6 +77,7 @@ function render ()
     else
     {
       newTd4.textContent = "Yếu"
+      newTr.style.backgroundColor = 'yellow'
     }
     let newTd5 = document.createElement('td');
     let newBtn = document.createElement('button');

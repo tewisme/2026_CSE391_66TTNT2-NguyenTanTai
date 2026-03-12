@@ -1,0 +1,27 @@
+.input-data {
+  gap: 10px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.input-filter {
+  gap: 10px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+#titleInput {
+  display: flex;
+  justify-content: center;
+}
+
+#listInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+#gradeHeader {
+  all: unset;
+  cursor: pointer;
+}

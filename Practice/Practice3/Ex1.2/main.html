@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h2 id='titleInput'>
+    Nhập thông tin sinh viên
+  </h2>
+  <div class='container'>
+    <form class='input-data'>
+      <input type="text" id="input-name" placeholder="Nguyễn Văn A">
+      <input type="number" id="input-point" placeholder="4.0">
+      <button id='btnSubmit' type='submit'>Submit</button>
+    </form>
+    <div id='filter-box'>
+      <form class='input-filter'>
+        <input type="text" id='textFilter' placeholder="Nguyễn Văn A">
+        <button type="submit" id='btnTextFilter'>Filter</button>
+      </form>
+      <form class='input-filter'>
+        <label for="grades">Chọn điểm</label>
+        <select id='grades' name='grades'>
+          <option value="Giỏi">Giỏi</option>
+          <option value="Khá">Khá</option>
+          <option value="Trung Bình">Trung Bình</option>
+          <option value="Yếu">Yếu</option>
+        </select>
+        <button type="submit" id='btnGradeFilter'>Filter</button>
+      </form>
+      <form class='input-filter'>
+        <button type="submit" id='btnFilterAll'>Filter</button>
+        <button type="submit" id='btnReset'>Reset</button>
+      </form>
+    </div>
+    <div id='listInfo'>
+      <table border='1'>
+        <thead id='title'>
+          <tr>
+            <th>STT</th>
+            <th>Họ tên</th>
+            <th><button id='gradeHeader'>Điểm</button></th>
+            <th>Xếp loại</th>
+            <th>Thao tác</th>
+          </tr>
+        </thead>
+        <tbody id='infoStudent'>
+          
+        </tbody>
+      </table>
+      <div>
+        <div id='notice-quantiy'>
+          Tổng số sinh viên là <span id='quantity'>0</span>
+        </div>
+        <div id='notice-avarage'>
+          Điểm trung bình là <span id='avarage'>0</span>
+        </div>
+        <div id='notice-no-res'>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src='scripts.js'>
+  </script>
+</body>
+</html>
