@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up</title>
+  <link rel="stylesheet" type="" href="style.css">
+</head>
+<body>
+  <div class='container'>
+    <h2 id='sign-up-title'>
+      Đăng Ký
+    </h2>
+    <form id='container' class='sign-up'>
+      <div class='box' id='box-name'>
+        <label for="input-name">Nhập Tên: </label>
+        <input id='input-name' type="input" name="name" placeholder="Nguyễn Văn A" required>
+        <p class='warn' id='warn-name'></p>
+      </div>
+      <div class='box' id='box-email'>
+        <label for="input-email">Nhập Email: </label>
+        <input id='input-email' type="input" name="email" placeholder="vana121@gmail.com" required>
+        <p class='warn' id='warn-email'></p>
+      </div>
+      <div class='box' id='box-phone-number'>
+        <label for="input-phone-number">Nhập SDT: </label>
+        <input id='input-phone-number' type="input" name="phone-number" placeholder="09xxxxxxxxx" required>
+        <p class='warn' id='warn-pnumber'></p>
+      </div>
+      <div class='box' id='box-password'>
+        <label for="input-password">Nhập mật khẩu: </label>
+        <input id='input-password' type="password" name="password" placeholder="Nhập mật khẩu" required>
+        <p class='warn' id='warn-password'></p>
+      </div>
+      <div class='box' id='box-repassword'>
+        <label for="input-repassword">Nhập lại mật khẩu: </label>
+        <input id='input-repassword' type="password" name="repassword" placeholder="Nhập lại mật khẩu" required>
+        <p class='warn' id='warn-repassword'></p>
+      </div>
+      <div id='box-gender'>
+        <label for="input-gender">Nhập lại mật khẩu: </label>
+        <input id='input-gender' type="radio" name="gender" value='1' required> Nam
+        <input id='input-gender' type="radio" name="gender" value='2' required> Nữ
+        <input id='input-gender' type="radio" name="gender" value='3' required> Khác
+      </div>
+      <div id='box-term'>
+        <input id='input-term' type="checkbox" name="term" required> Tôi chấp nhận điều khoản
+      </div>
+      <div id='box-btn'>
+        <button type="submit" id='btn-signup'>Đăng ký</button>
+      </div>
+    </form>
+  </div>
+  <script src='script.js'></script>
+</body>
+</html>

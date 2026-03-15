@@ -108,10 +108,15 @@ function render (newArray)
     avarage.textContent = 0;
     response.textContent = 'Không có kết quả'
   }
-  arrTemp = arr
+  arrTemp = newArray 
 }
 //---------------------------------------------------//
 const btnReset = document.getElementById('btnReset');
+btnReset.addEventListener('click', function (event){
+  event.preventDefault();
+  render(arr);
+})
+//---------------------------------------------------//
 const btnTextFilter = document.getElementById('btnTextFilter');
 const inputFilter = document.getElementById('textFilter');
 
@@ -128,10 +133,6 @@ function arrNameFilter (nameFilter)
   }
   return res
 }
-btnReset.addEventListener('click', function (event){
-  event.preventDefault();
-  render(arr);
-})
 
 btnTextFilter.addEventListener('click', function (event){
   event.preventDefault();
@@ -172,7 +173,6 @@ const gradeHeader = document.getElementById('gradeHeader');
 let checkCount = 0;
 gradeHeader.addEventListener('click', function(event){
   event.preventDefault();
-  checkCount++;
   if ( checkCount % 2 == 0 )
   {
     render((arrTemp.sort((a, b) => a[1] - b[1])));
@@ -181,6 +181,7 @@ gradeHeader.addEventListener('click', function(event){
   {
     render((arrTemp.sort((a, b) => b[1] - a[1])));
   }
+  checkCount++;
 });
 //---------------------------------------------------//
 const btnFilterAll = document.getElementById('btnFilterAll');

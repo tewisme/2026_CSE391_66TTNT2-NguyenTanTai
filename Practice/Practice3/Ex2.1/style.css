@@ -1,0 +1,29 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#sign-up-title {
+  display: flex;
+  justify-content: center;
+  margin: 5px;
+}
+.container {
+  background-color: aqua;
+  width: 800px;
+}
+.sign-up {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+#box-btn {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.box {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
