@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Đặt hàng trực tuyến</title>
+  <link rel="stylesheet" type="" href="style.css">
+</head>
+<body>
+  <div id='container'>
+    <h2 class='' id='h2-title'>Đặt hàng trực tuyến</h2>
+    <form id='input-form'>
+      <div class='box'>
+        <label for="products">Sản phẩm muốn chọn:</label>
+        <select id='products' name='product'>
+          <option value="default">-- Chọn sản phẩm --</option>
+          <option value="book" required>Book</option>
+          <option value="bible" required>Holy Bible</option>
+          <option value="rd" required>Random Item</option>
+        </select>
+        <p class='warn' id='warn-items'></p>
+      </div>
+      <div class='box'>
+        <label for="quantity">Số lượng:</label>
+        <input type="number" min='1' max='99' step='1' id='quantity'>
+        <p class='warn' id='warn-quantity'></p>
+      </div>
+      <div class='box'>
+        <label for="dates">Nhập ngày giao hàng:</label>
+        <input type="date" id='dates'>
+        <p class='warn' id='warn-date'></p>
+      </div>
+      <div class='box'>
+        <label for="address">Nhập địa chỉ giao hàng:</label>
+        <input type="text" id='address'>
+        <p class='warn' id='warn-address'></p>
+      </div>
+      <div class='box'>
+        <label for="notes">Ghi chú:</label>
+        <textarea id="notes" rows="" cols=""></textarea>
+        <p class='warn' id='warn-notes'></p>
+      </div>
+      <div class='box'>
+        <label for="payment">Phương thức thanh toán:</label>
+        <input type="radio" id="payment" required>COD
+        <input type="radio" id="payment" required>eBank
+        <input type="radio" id="payment" required>eWallet
+        <p class='warn' id='warn-payment'></p>
+      </div>
+      <button type="submit" id='btn-buy'>Mua</button>
+    </form>
+    
+  </div>
+  
+  <script src='script.js'></script>
+</body>
+</html>

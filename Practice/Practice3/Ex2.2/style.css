@@ -1,0 +1,23 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#container {
+  background-color: aqua;
+  width: 600px;
+}
+#h2-title {
+  display: flex;
+  justify-content: center;
+}
+.box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+#input-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
